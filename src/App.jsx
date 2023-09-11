@@ -9,7 +9,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/shamimraza/wateches-data/main/Watches.json')
+    fetch('https://raw.githubusercontent.com/shamimraza/wateches-data/main/public/Watches.json')
       .then(res => res.json())
       .then(data => setWatchData(data))
   }, [])
